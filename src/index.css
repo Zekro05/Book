@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-primary: #845EC2;
+    --color-secondary: #FFC75F;
+    --color-dark: #1B1B1B;
+    --color-light: #F8F8F8;
+
+  }
+
+@layer base {
+    .container {
+      @apply mx-auto px-4; /* Default padding (1rem) */
+    }
+  
+    @media (min-width: 640px) { /* Small screen (sm) */
+      .container {
+        @apply px-12; /* 3rem */
+      }
+    }
+  }
+  
+
+  
+  
+
+
